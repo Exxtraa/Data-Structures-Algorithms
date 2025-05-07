@@ -163,6 +163,8 @@ void pattern15(int n){
         cout << endl;
     }
 }
+
+
 int main(){
     int n = 5;
     pattern15(n);
