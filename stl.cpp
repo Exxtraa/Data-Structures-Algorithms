@@ -7,8 +7,8 @@ using namespace std;
 //Iterators
 
 int definePair(){
-    pair <int,int> arr[] = {{10,5},{69,52}};
-    cout << arr[1].second;
+    pair<int,pair<int,int>> p = {1,{8,6}};
+    cout << p.second.first;
 }
 
 int main (){
