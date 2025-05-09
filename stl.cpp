@@ -20,46 +20,134 @@ using namespace std;
 
 
 // 2.  VECTOR
-int defineVectors(){
-    // vector <int> v;
-    // v.push_back(5);
+// int defineVectors(){
+//     vector <int> v;
+//     v.push_back(5);
 
-    //COMPLEX ITERATION
-    // vector <int>::iterator it = v.begin();
-    // it++;
-    // cout << *(it) << " ";
-    // it+ 2;
-    // cout << *(it) << " ";
+//     COMPLEX ITERATION
+//     vector <int>::iterator it = v.begin();
+//     it++;
+//     cout << *(it) << " ";
+//     it+ 2;
+//     cout << *(it) << " ";
 
-    // vector<int>::iterator it-- = v.end();  Cuz without -- it takes value out of the array so to be in array use --
-    // vector<int>::iterator it = v.rend();   RARE USED
-    // vector<int>::iterator it = v.rbegin(); RARW USED
+//     vector<int>::iterator it-- = v.end();  Cuz without -- it takes value out of the array so to be in array use --
+//     vector<int>::iterator it = v.rend();   RARE USED
+//     vector<int>::iterator it = v.rbegin(); RARW USED
 
-    //    TO SIMPLIFY THIS 
-    // for(auto it = v.begin(); it !v = v.end(); i++ ){    
-    //     cout << *(it) << " ";
-    // }  
+//        TO SIMPLIFY THIS 
+//     for(auto it = v.begin(); it !v = v.end(); i++ ){    
+//         cout << *(it) << " "; }  
     
-    // WE USE THIS FOR LOOP
-    // for(auto it : v){
-    //     cout << *(it) << " ";
-    // }
+//     WE USE THIS FOR LOOP
+//     for(auto it : v){
+//         cout << *(it) << " "; }
 
-    // //USING ERASE  && INSERT
-    // vector<int> v = {1,6,7,99,7,5};
-    // // v.erase(v.begin()+3);                 IT ERASES
-    // // v.insert(v.begin()+3,1,69);           IT INSERTS
-    // for(int val : v ){
-    //     cout << val << " ";
-    // }
-    // cout << endl;
-    // return 0;
+//     //USING ERASE  && INSERT
+//     vector<int> v = {1,6,7,99,7,5};
+//     // v.erase(v.begin()+3);                 IT ERASES
+//     // v.insert(v.begin()+3,1,69);           IT INSERTS
+//     for(int val : v ){
+//         cout << val << " "; }
+//     cout << endl;
+//     return 0; }
+
+//   LIST
+// int defineList(){
+//     list<int> l = {1,4,8};
+//     l.push_back(5);
+//     for(int val : l)
+//         cout << val << " "; }
+
+
+// PRIORITY_QUEUE
+// int definePriority(){
+//     priority_queue<int> pq;
+//     pq.push(6);
+//     pq.push(9);
+//     pq.push(3);
+//     pq.emplace(44);
+//     // pq.pop();
+//     cout << pq.top() << "  ";
+//     pq.push(100);
+//     cout << pq.top();}
+
+
+//   SET
+// int defineSet(){
+//     set<int> st;
+//     st.insert(5);
+//     st.insert(2);
+//     st.emplace(2);
+//     st.insert(1);
+//     st.insert(3);
+//     st.insert(4);
+
+//     auto it = st.find(3);
+//     if (it != st.end()) {
+//         cout << *it << endl;  // prints 3
+//     } else {
+//         cout << "Not found" << endl;
+//     }}
+
+
+//   MAP
+// int defineMap(){
+//     map<string,int> m;
+
+//     m["laptop"] = 100;
+//     m["watch"] = 140;
+//     // m["tv"] = 50;
+//     m["monitors"] = 210;
+
+//     for(auto p: m){
+//         cout << p.first << " " << p.second << endl;
+//     }
+
+//     if(m.find("tv") != m.end()){
+//         cout << "Found";
+//     } else{
+//         cout << "Not found";
+//     };}
+
+//MULTI MAP
+// int defineMultiMap(){
+//     multimap<string,int> m;
+
+//     m.emplace("tv", 100);
+//     m.emplace("tv", 100);
+//     m.emplace("tv", 100);
+//     m.emplace("tv", 100);
+
+//     m.erase(m.find("tv"));
+
+//     for(auto p: m){
+//         cout << p.first << " " << p.second << endl;
+//     };}
+
+
+//SORTING
+int defineSorting(){
+    vector<int> vec = {1,8,6,8,9,2};
+
+    sort( vec.begin(), vec.end());
+
+    for(auto l : vec){
+        cout << l;
+    };
 }
+
 
 
 int main (){
     // definePair();
-    defineVectors();
+    // defineVectors();
+    // defineList();
+    // definePriority();
+    // defineSet();
+    // defineMap();
+    // defineMultiMap();/
+    defineSorting();
 }
 
 
