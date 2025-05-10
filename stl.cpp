@@ -127,16 +127,35 @@ using namespace std;
 
 
 //SORTING
-int defineSorting(){
-    vector<int> vec = {1,8,6,8,9,2};
+// int defineSorting(){
+//     vector<pair<int,int>> vec = {{1,8},{6,8},{7,9}};
 
-    sort( vec.begin(), vec.end());
+//     sort( vec.begin(), vec.end());
 
-    for(auto l : vec){
-        cout << l;
-    };
+//     for(auto l : vec){
+//         cout << l.first << " " << l.second << endl;  
+//     };
+// }
+
+//SROTING IN PAIRS SECOND VALUE OUTPUT
+bool comparitor(pair<int,int>p1 , pair<int,int>p2){
+    if(p1.second < p2.second)return true;
+    if(p1.second > p2.second) return false;
+    
+    if(p1.first < p2.first) return true;
+    else return false;
+};
+
+int definePairSorting(){
+    vector<pair<int,int>> v = { {9,1},{5,1},{4,3}};
+
+    sort(v.begin(), v.end(),comparitor);
+
+    for(auto l : v){
+        cout << l.first << " " << l.second << endl;
+    }
+
 }
-
 
 
 int main (){
@@ -147,7 +166,8 @@ int main (){
     // defineSet();
     // defineMap();
     // defineMultiMap();/
-    defineSorting();
+    // defineSorting();
+    definePairSorting();
 }
 
 
