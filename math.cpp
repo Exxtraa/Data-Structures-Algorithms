@@ -87,23 +87,23 @@ using namespace std;
 
 
 //PRIME NUMBER
-int prime(){
-    int n = 11;
-	int count = 0;
-	for(int i=1; i*i<=n; i++){
-		if(n % i == 0){
-			count++;
-			if((n/i) != i){
-				count++;
-			};
-		};
-	};
-	if( count == 2){
-		 cout << "true";
-	} else{
-		 cout << "false";
-	};
-}
+// int prime(){
+//     int n = 11;
+// 	int count = 0;
+// 	for(int i=1; i*i<=n; i++){
+// 		if(n % i == 0){
+// 			count++;
+// 			if((n/i) != i){
+// 				count++;
+// 			};
+// 		};
+// 	};
+// 	if( count == 2){
+// 		 cout << "true";
+// 	} else{
+// 		 cout << "false";
+// 	};
+// }
 
 
 
@@ -114,6 +114,6 @@ int main(){
     // armstrong();
     // divison();
     // divisonAll();
-    prime();
-    return 0;
+    // prime();
+    // return 0;
 }
