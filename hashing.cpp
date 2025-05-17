@@ -64,7 +64,11 @@ using namespace std;
 //    map<int,int> mpp;
 //    for(int i=0;i<n;i++){
 //     mpp[arr[i]]++;
-//    }
+//    }                                         
+                
+                                // for(auto it : mpp){
+                                //cout << it.first << " " << it.second << endl;  //THIS IS TO ITERATE MAP
+                                // }
 
 //    int q;
 //    cin >> q;
@@ -77,6 +81,22 @@ using namespace std;
 
 
 int main(){
+ 
+    string s;
+    cin >> s;
+
+    map<char,int> mpp;
+    for(int i=0;i<s.size();i++){
+        mpp[s[i]]++;
+    }
+
+    int q;
+    cin >> q;
+    while(q--){
+        char num;
+        cin >> num;
+        cout << mpp[num] << endl;
+    }
 
 
     // // 1.
