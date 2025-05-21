@@ -28,6 +28,7 @@ int secondlargest(vector<int>&a,int n){
     return slargest;
 }
 
+// saecond smallest in array and second largest both impo ques
 int secondSmallest(vector<int>&a,int n){
     int smallest = a[0];
     int sSmallest = INT_MAX;
@@ -46,4 +47,17 @@ vector<int> getSecondOrderElements(int n, vector<int> a) {
     int slargest = secondlargest(a,n);
     int sSmallest = secondSmallest(a,n);
     return{slargest,sSmallest};
+}
+
+
+// Is array sorted or not
+int sorted(int n,vector<int>&a){
+    for(int i =0;i<n;i++){
+        if(arr[i] >= arr[i-1]){
+
+        }else{
+            return false;
+        }
+    }
+    return true;
 }
